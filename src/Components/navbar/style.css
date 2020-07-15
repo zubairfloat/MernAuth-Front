@@ -1,0 +1,28 @@
+.navbarMain{
+    background-color: rgb(117,29,82);
+    height: 100%;
+    color: white;
+    padding: 200px 0px;
+}
+.navbarBrand{
+    color: white;
+    font-size: 36px !important;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.navbarBrand:hover {
+    color: rgb(194, 248, 194) !important;
+}
+.navbarLinks{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 30px;
+}
+.navbarLinks:hover{
+    color: white !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
