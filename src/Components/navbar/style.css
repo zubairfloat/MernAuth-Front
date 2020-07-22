@@ -1,27 +1,29 @@
 .navbarMain{
-    background-color: rgb(117,29,82);
+    background-color: rgb(218, 221, 221);
     height: 100%;
     color: white;
-    padding: 18px 0px;
+    padding: 30px !important;
 }
-.navbarBrand{
-    color: white;
-    font-size: 36px !important;
-    font-weight: 700;
-    font-family: sans-serif;
-}
-.navbarBrand:hover {
-    color: rgb(194, 248, 194) !important;
-}
+
 .navbarLinks{
-    color: white;
-    font-size: 25px;
+    color: rgb(59, 59, 59) !important;
+    font-size: 21px;
     font-weight: 500;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px 30px;
 }
 .navbarLinks:hover{
     color: white !important;
+}
+.navbarLogin{
+    margin: 4px 30px 0px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(73, 96, 107) , rgb(111, 95, 170)); /* Standard syntax (must be last) */
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 100px;
 }
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,102,203);

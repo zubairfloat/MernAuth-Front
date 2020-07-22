@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {
+    Row,
+    Col,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -11,34 +13,44 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
+    NavbarText,
+    Container,
+    Button
 } from 'reactstrap';
+import logo from '../../Images/Navbar/logo.png';
 import './style.css';
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <div>
-            <Navbar color="black" className="navbarMain" dark expand="md">
-                <NavbarBrand className="navbarBrand" href="/">Float Business</NavbarBrand>
+        <Navbar color="black" className="navbarMain" dark expand="md">
+            <Container fluid='md' style={{ textAlign: "center" }}>
+                <NavbarBrand className="navbarBrand">
+                    <img className="navbarLogo" src={logo}></img>
+                </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar >
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="navbarLinks" href=""> Trending</NavLink>
+                            <NavLink className="navbarLinks" href="/"> Trending</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="navbarLinks" href=""> Business</NavLink>
+                            <NavLink className="navbarLinks" href="business"> Business</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="navbarLinks" href="/">Login</NavLink>
+                            <NavLink className="navbarLinks" href=""> About us</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="navbarLogin" href="/signup"> Login</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
-            </Navbar>
-        </div>
+            </Container>
+        </Navbar>
     );
 }
 
 export default Header;
+
+
